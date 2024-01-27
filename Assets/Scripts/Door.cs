@@ -7,7 +7,7 @@ public class Door : MonoBehaviour
     // Start is called before the first frame update
     Animator mAnim;
     bool mIsClosed = true;
-
+    bool mDoorFall = false;
 
     void Start()
     {
@@ -19,10 +19,16 @@ public class Door : MonoBehaviour
         
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            if (mIsClosed)
+           /* if (mIsClosed)
                 OpenDoor();
             else
                 CloseDoor();
+           */
+           if(mDoorFall == false)
+            {
+                mDoorFall = true;
+                DoorFall();
+            }
         }
     }
 
@@ -36,5 +42,10 @@ public class Door : MonoBehaviour
     {
         mIsClosed = true;
         mAnim.SetBool("IsOpen", false);
+    }
+
+    public void DoorFall()
+    {
+        mAnim.SetBool("FallDown", true);
     }
 }
