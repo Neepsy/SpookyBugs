@@ -2,13 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
+    public GameObject CreditsPanel;
+    public GameObject SettingsPanel;
+
+
+    private bool isCreditsOpen = false;
+    private bool isSettingsOpen = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        SettingsPanel.SetActive(isCreditsOpen);
+        CreditsPanel.SetActive(isSettingsOpen);
     }
 
     IEnumerator LoadGameSceneAsync()
@@ -34,5 +44,17 @@ public class MenuManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void ToggleSettings()
+    {
+        isSettingsOpen = !isSettingsOpen;
+        SettingsPanel.SetActive(isSettingsOpen);
+    }
+
+    public void ToggleCredits()
+    {
+        isCreditsOpen = !isCreditsOpen;
+        CreditsPanel.SetActive(isCreditsOpen);
     }
 }

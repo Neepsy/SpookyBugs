@@ -9,7 +9,6 @@ public class NarrationPlayer : MonoBehaviour
     public Narration narrations;
     public bool debugPlay;
 
-
     private bool isPlaying;
 
     private AudioSource audioSource;
