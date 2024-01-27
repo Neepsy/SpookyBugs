@@ -5,17 +5,14 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-
     public float moveSpeed = 0.02f;
     public float acceleration = 2f;
     public float jumpPower = 2.0f;
-
 
     private CharacterController controller;
     private Vector3 movement;
     private PlayerInput input;
     private CameraLook cameraController;
-
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +53,4 @@ public class PlayerController : MonoBehaviour
         //TODO: Are we even implementing jump?
         Debug.Log("Jump pressed");
     }
-
-
 }
