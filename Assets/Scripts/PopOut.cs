@@ -8,6 +8,7 @@ public class PopOut : MonoBehaviour
     bool mHiding = true;
     //Enable this if the cutout object is going to drop and shatter
     public bool mDropCutout = false;
+    public float mDropDelay = 2f;
     public bool mShatterobject = false;
     public bool mWiggle = false;
     public GameObject mCutout;
@@ -42,7 +43,7 @@ public class PopOut : MonoBehaviour
 
     IEnumerator DropWait()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(mDropDelay);
         DetachCutout();
     }
     public void DetachCutout()
