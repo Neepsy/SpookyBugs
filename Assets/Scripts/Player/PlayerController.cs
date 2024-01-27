@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     private Vector3 movement;
     private PlayerInput input;
+    private CameraLook cameraController;
 
 
     // Start is called before the first frame update
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         controller = gameObject.GetComponent<CharacterController>();
         input = gameObject.GetComponent<PlayerInput>();
+        cameraController = gameObject.GetComponentInChildren<CameraLook>();
 
 
         input.actions["Jump"].performed += context => OnJump(context);
@@ -30,15 +32,23 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         OnMove(input.actions["Move"].ReadValue<Vector2>());
+        OnMouseLook(input.actions["Look"].ReadValue<Vector2>());
     }
 
     private void OnMove(Vector2 input)
-    {
+    { 
         Vector3 targetMovement = new Vector3(input.x, 0, input.y);
+        targetMovement = transform.TransformDirection(targetMovement);
 
         // (De)accelerate actual movement towards input value
         movement = Vector3.MoveTowards(movement, targetMovement, acceleration * Time.deltaTime);
         controller.Move(movement * moveSpeed);
+    }
+
+    private void OnMouseLook(Vector2 input)
+    {
+       Quaternion PlayerXRotation = cameraController.UpdateCameraRotation(input);
+        transform.localRotation = PlayerXRotation;
     }
 
     private void OnJump(InputAction.CallbackContext context)
@@ -46,4 +56,6 @@ public class PlayerController : MonoBehaviour
         //TODO: Are we even implementing jump?
         Debug.Log("Jump pressed");
     }
+
+
 }
