@@ -507,11 +507,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3403196197956813111, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2189402
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3403196197956813111, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.16
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3403196197956813111, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: m_LocalPosition.z
@@ -519,7 +519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3403196197956813111, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3403196197956813111, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: m_LocalRotation.x
@@ -531,7 +531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3403196197956813111, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3403196197956813111, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -543,11 +543,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3403196197956813111, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6208217665961639337, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: m_Name
       value: PopOut
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213723649697543207, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
+      propertyPath: mWiggle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213723649697543207, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
+      propertyPath: mShatterobject
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

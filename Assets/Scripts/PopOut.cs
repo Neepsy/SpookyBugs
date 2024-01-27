@@ -9,6 +9,7 @@ public class PopOut : MonoBehaviour
     //Enable this if the cutout object is going to drop and shatter
     public bool mDropCutout = false;
     public bool mShatterobject = false;
+    public bool mWiggle = false;
     public GameObject mCutout;
 
 
@@ -33,6 +34,8 @@ public class PopOut : MonoBehaviour
         mAnim.SetBool("Hiding", false);
         if (mDropCutout)
             StartCoroutine(DropWait());
+        if (mWiggle)
+            mAnim.SetBool("Wiggle", true);
 
     }
 
