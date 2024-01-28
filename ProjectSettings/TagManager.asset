@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Subtitle
   - Settings
+  - SceneLoader
   layers:
   - Default
   - TransparentFX
