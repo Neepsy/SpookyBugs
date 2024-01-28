@@ -51,4 +51,9 @@ public class MenuManager : MonoBehaviour
     {
         SceneLoader.INSTANCE.LoadScene("Credits");
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
