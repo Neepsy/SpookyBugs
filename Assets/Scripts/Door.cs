@@ -22,12 +22,14 @@ public class Door : MonoBehaviour
         
         if(Input.GetKeyDown(KeyCode.Space) && mIsPlayerClose)
         {
-            if (mIsClosed)
-                OpenDoor();
+            if (!mDoorFall)
+            {
+                if (mIsClosed)
+                    OpenDoor();
+                else
+                    CloseDoor();
+            }
             else
-                CloseDoor();
-
-            if (mDoorFall == false)
             {
                 mDoorFall = true;
                 DoorFall();
