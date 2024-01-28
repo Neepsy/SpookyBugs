@@ -94,6 +94,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8184675803652019723}
+  - component: {fileID: 2095072302442498769}
+  - component: {fileID: 6917484351691928554}
+  - component: {fileID: 1546241615060014131}
   m_Layer: 0
   m_Name: ElevatorDoor
   m_TagString: Untagged
@@ -121,6 +124,63 @@ Transform:
   - {fileID: 8635916360618995777}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2095072302442498769
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2943377541531316610}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a72d99e191da8ee48a828852064bb965, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &6917484351691928554
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2943377541531316610}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.5, z: 0.98}
+  m_Center: {x: 0, y: 1.1, z: 0}
+--- !u!114 &1546241615060014131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2943377541531316610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a872cc97dd7ff04f8b5ffcf08e658c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mCanClose: 0
+  mDoorFall: 0
 --- !u!1 &3318858013932250886
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,6 +277,7 @@ GameObject:
   - component: {fileID: 7428437213582410723}
   - component: {fileID: 6656209863220880770}
   - component: {fileID: 6958575344461563074}
+  - component: {fileID: 3861909097023940030}
   m_Layer: 0
   m_Name: Right_Door_Final
   m_TagString: Untagged
@@ -291,6 +352,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3861909097023940030
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964737611025672945}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0052473093, y: 0.001000005, z: 0.019996589}
+  m_Center: {x: -0.0023708625, y: -7.104884e-17, z: 0.009999233}
 --- !u!1 &5927683331723818909
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,6 +384,7 @@ GameObject:
   - component: {fileID: 3879741885661146703}
   - component: {fileID: 4316193709634613681}
   - component: {fileID: 374025870793483123}
+  - component: {fileID: 4697988987214619969}
   m_Layer: 0
   m_Name: Left_Door_Final
   m_TagString: Untagged
@@ -376,6 +459,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4697988987214619969
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5927683331723818909}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0052500004, y: 0.0010000004, z: 0.019999994}
+  m_Center: {x: -0.00008184428, y: -5.680824e-17, z: 0.007995048}
 --- !u!1 &9065613825457023728
 GameObject:
   m_ObjectHideFlags: 0

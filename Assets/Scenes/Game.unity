@@ -1883,14 +1883,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ElevatorDoor2
       objectReference: {fileID: 0}
-    - target: {fileID: 3879741885661146703, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.2004949
-      objectReference: {fileID: 0}
-    - target: {fileID: 7159009892733172466, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.006914
-      objectReference: {fileID: 0}
     - target: {fileID: 8184675803652019723, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.097759
@@ -1934,84 +1926,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2943377541531316610, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1052230650}
-    - targetCorrespondingSourceObject: {fileID: 2943377541531316610, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1052230649}
-    - targetCorrespondingSourceObject: {fileID: 2943377541531316610, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1052230648}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
 --- !u!4 &1052230646 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8184675803652019723, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
   m_PrefabInstance: {fileID: 1052230645}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1052230647 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2943377541531316610, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
-  m_PrefabInstance: {fileID: 1052230645}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1052230648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052230647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a872cc97dd7ff04f8b5ffcf08e658c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mCanClose: 0
-  mDoorFall: 0
---- !u!65 &1052230649
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052230647}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1.5, z: 0.5}
-  m_Center: {x: 0, y: 1.1, z: 0}
---- !u!95 &1052230650
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052230647}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a72d99e191da8ee48a828852064bb965, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1086444480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5414,73 +5335,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130679202}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1015904694810934397 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2943377541531316610, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
-  m_PrefabInstance: {fileID: 4685527853484178578}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1015904694811025501 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8184675803652019723, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
   m_PrefabInstance: {fileID: 4685527853484178578}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1015904694811025502
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1015904694810934397}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1.5, z: 0.5}
-  m_Center: {x: 0, y: 1.1, z: 0}
---- !u!95 &1015904694811025504
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1015904694810934397}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a72d99e191da8ee48a828852064bb965, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1015904694811025505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1015904694810934397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a872cc97dd7ff04f8b5ffcf08e658c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mCanClose: 0
-  mDoorFall: 0
 --- !u!1001 &4685527853484178578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5492,14 +5351,6 @@ PrefabInstance:
     - target: {fileID: 2943377541531316610, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
       propertyPath: m_Name
       value: ElevatorDoor1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3879741885661146703, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.2004949
-      objectReference: {fileID: 0}
-    - target: {fileID: 7159009892733172466, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.006914
       objectReference: {fileID: 0}
     - target: {fileID: 8184675803652019723, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5544,16 +5395,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2943377541531316610, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1015904694811025504}
-    - targetCorrespondingSourceObject: {fileID: 2943377541531316610, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1015904694811025502}
-    - targetCorrespondingSourceObject: {fileID: 2943377541531316610, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1015904694811025505}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fefc7712992eb8345a7c82cc39348f51, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
