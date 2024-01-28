@@ -60,6 +60,6 @@ public class PopOut : MonoBehaviour
         mCutout.transform.SetParent(null);
         mCutout.GetComponent<Rigidbody>().AddForce(Random.Range(1,5), 0, Random.Range(0,3));
         mCutout.GetComponent<Rigidbody>().useGravity = true;
-        mCutout.GetComponent<SphereCollider>().enabled = true;
+        mCutout.GetComponent<BoxCollider>().enabled = true;
     }
 }
