@@ -14,7 +14,7 @@ public class SettingsManager : MonoBehaviour
 
     public AudioMixer mixer;
 
-    static SettingsManager INSTANCE;
+    public static SettingsManager INSTANCE;
 
 
     // Start is called before the first frame update

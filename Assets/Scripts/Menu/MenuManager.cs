@@ -33,7 +33,7 @@ public class MenuManager : MonoBehaviour
 
     public void StartGame()
     {
-        StartCoroutine(LoadGameSceneAsync());
+        SceneLoader.INSTANCE.LoadScene("Game");
     }
 
     // Update is called once per frame
@@ -49,6 +49,6 @@ public class MenuManager : MonoBehaviour
 
     public void ToggleCredits()
     {
-        creditsPanel.SetActive(!creditsPanel.activeInHierarchy);
+        SceneLoader.INSTANCE.LoadScene("Credits");
     }
 }
