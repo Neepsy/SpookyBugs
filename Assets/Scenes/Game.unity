@@ -3339,6 +3339,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Second TV
       objectReference: {fileID: 0}
+    - target: {fileID: 6063571412412896021, guid: b1b4af5739236fa43916a3e7c8d9fc42, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8828170350477954366, guid: b1b4af5739236fa43916a3e7c8d9fc42, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.783849
@@ -3431,6 +3435,10 @@ PrefabInstance:
     - target: {fileID: 2878652540330526410, guid: b1b4af5739236fa43916a3e7c8d9fc42, type: 3}
       propertyPath: m_Name
       value: FourthTV
+      objectReference: {fileID: 0}
+    - target: {fileID: 6063571412412896021, guid: b1b4af5739236fa43916a3e7c8d9fc42, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8828170350477954366, guid: b1b4af5739236fa43916a3e7c8d9fc42, type: 3}
       propertyPath: m_LocalPosition.x
