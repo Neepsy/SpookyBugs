@@ -1036,6 +1036,10 @@ PrefabInstance:
       value: PopOut (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6213723649697543207, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
+      propertyPath: mCutout
+      value: 
+      objectReference: {fileID: 1597194827}
+    - target: {fileID: 6213723649697543207, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: mWiggle
       value: 0
       objectReference: {fileID: 0}
@@ -1165,6 +1169,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: f2c7b234fa8f7b841aadef4463f00806, type: 2}
+    - target: {fileID: -927199367670048503, guid: f5ef424355a247a428f8c167497ff75c, type: 3}
+      propertyPath: m_Name
+      value: all monsters flat - breakable - Mob 3
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f5ef424355a247a428f8c167497ff75c, type: 3}
       propertyPath: m_Name
       value: Cutout
@@ -2486,7 +2494,7 @@ PrefabInstance:
     - target: {fileID: 6213723649697543207, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: mCutout
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1221057095}
     - target: {fileID: 6213723649697543207, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: mDropDelay
       value: 2
@@ -2888,6 +2896,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 183173153e7e1db47bbf0cdc7760718a, type: 2}
+    - target: {fileID: -927199367670048503, guid: f5ef424355a247a428f8c167497ff75c, type: 3}
+      propertyPath: m_Name
+      value: all monsters flat - breakable - Mob 2
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f5ef424355a247a428f8c167497ff75c, type: 3}
       propertyPath: m_Name
       value: Cutout
@@ -3632,6 +3644,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a9565dcbfb72890439f25e649128fd15, type: 2}
+    - target: {fileID: -927199367670048503, guid: f5ef424355a247a428f8c167497ff75c, type: 3}
+      propertyPath: m_Name
+      value: all monsters flat - breakable - Mob 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f5ef424355a247a428f8c167497ff75c, type: 3}
       propertyPath: m_Name
       value: cutout
@@ -4404,6 +4420,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fca670d56c1f2954dac1757582b9942d, type: 3}
+--- !u!1 &1221057095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: fca670d56c1f2954dac1757582b9942d, type: 3}
+  m_PrefabInstance: {fileID: 1221057094}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1240753153
 GameObject:
   m_ObjectHideFlags: 0
@@ -5293,7 +5314,7 @@ PrefabInstance:
     - target: {fileID: 6213723649697543207, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: mCutout
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1407712251}
     - target: {fileID: 6213723649697543207, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: mDropDelay
       value: 0
@@ -5389,6 +5410,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 834b0b448a0da464495c1593c215127c, type: 3}
+--- !u!1 &1407712251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: f5ef424355a247a428f8c167497ff75c, type: 3}
+  m_PrefabInstance: {fileID: 185813835}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1448028720
 GameObject:
   m_ObjectHideFlags: 0
@@ -6433,6 +6459,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2121314575}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1597194827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: f5ef424355a247a428f8c167497ff75c, type: 3}
+  m_PrefabInstance: {fileID: 802079490}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1603280369 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5469002842736159337, guid: 834b0b448a0da464495c1593c215127c, type: 3}
@@ -8173,6 +8204,10 @@ PrefabInstance:
       value: PopOut
       objectReference: {fileID: 0}
     - target: {fileID: 6213723649697543207, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
+      propertyPath: mCutout
+      value: 
+      objectReference: {fileID: 2077930380}
+    - target: {fileID: 6213723649697543207, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: mDropDelay
       value: 0
       objectReference: {fileID: 0}
@@ -8740,6 +8775,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.84, y: 1, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &2077930380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: f5ef424355a247a428f8c167497ff75c, type: 3}
+  m_PrefabInstance: {fileID: 1037241901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2078558426
 PrefabInstance:
   m_ObjectHideFlags: 0
