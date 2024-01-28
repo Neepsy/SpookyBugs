@@ -7,12 +7,17 @@ public class VideoManager : MonoBehaviour
 {
     public VideoPlayer video;
 
+    public VideoClip staticClip;
+    public VideoClip dialogueClip;
+
     private void Start()
     {
         if(video == null)
         {
             video = GetComponentInChildren<VideoPlayer>();
         }
+
+        PlayStatic();
     }
 
     public void PlayVideo()
@@ -29,6 +34,18 @@ public class VideoManager : MonoBehaviour
     {
         video.Stop();
         video.Play();
+    }
+
+    public void PlayStatic()
+    {
+        video.clip = staticClip;
+        RestartVideo();
+    }
+
+    public void PlayDialogue()
+    {
+        video.clip = dialogueClip;
+        RestartVideo();
     }
 
     public void ChangeVideo(VideoClip clip)
