@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class NarrationPlayer : MonoBehaviour
 {
@@ -16,13 +18,25 @@ public class NarrationPlayer : MonoBehaviour
     private TextMeshProUGUI subtitleText;
     private SettingsManager settings;
 
+    public UnityEvent afterEvent;
+
     private void Start()
     {
         // Find components
         audioSource = GameObject.FindWithTag("MainCamera").GetComponent<AudioSource>();
         subtitleObject = GameObject.FindWithTag("Subtitle");
         subtitleText = subtitleObject.GetComponentInChildren<TextMeshProUGUI>();
-        settings = GameObject.FindWithTag("Settings").GetComponent<SettingsManager>();
+
+        try
+        {
+            settings = GameObject.FindWithTag("Settings").GetComponent<SettingsManager>();
+        }
+        catch(Exception e)
+        {
+            settings = new SettingsManager();
+            settings.SetSubtitlesActive(true);
+        }
+        
 
         subtitleObject.SetActive(false);
     }
@@ -75,8 +89,10 @@ public class NarrationPlayer : MonoBehaviour
         }
 
         SetSubtitle("");
+        subtitleObject.SetActive(false);
 
         isPlaying = false;
+        afterEvent.Invoke();
         yield return null;
     }
 
