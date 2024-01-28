@@ -23,9 +23,9 @@ public class PopOut : MonoBehaviour
     void Update()
     {
         //temporary way to activate the object. To properly use this, call the RevealPopout() from wherever it is needed
-        if(mHiding)
+        /*if(mHiding)
             if (Input.GetKeyDown(KeyCode.Space))   
-                RevealPopOut();
+                RevealPopOut();*/
         
     }
 

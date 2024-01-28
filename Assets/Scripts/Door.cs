@@ -7,7 +7,10 @@ public class Door : MonoBehaviour
     // Start is called before the first frame update
     Animator mAnim;
     bool mIsClosed = true;
-    bool mDoorFall = false;
+    public bool mCanClose = false;
+    public bool mDoorFall = false;
+
+    bool mIsPlayerClose = false;
 
     void Start()
     {
@@ -17,18 +20,33 @@ public class Door : MonoBehaviour
     private void Update()
     {
         
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && mIsPlayerClose)
         {
-           /* if (mIsClosed)
+            if (mIsClosed)
                 OpenDoor();
             else
                 CloseDoor();
-           */
-           if(mDoorFall == false)
+
+            if (mDoorFall == false)
             {
                 mDoorFall = true;
                 DoorFall();
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            mIsPlayerClose = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            mIsPlayerClose = false;
         }
     }
 
@@ -40,6 +58,8 @@ public class Door : MonoBehaviour
 
     public void CloseDoor()
     {
+        if (!mCanClose)
+            return;
         mIsClosed = true;
         mAnim.SetBool("IsOpen", false);
     }
