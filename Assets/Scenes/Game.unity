@@ -1238,15 +1238,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a9565dcbfb72890439f25e649128fd15, type: 2}
     - target: {fileID: -4216859302048453862, guid: f5ef424355a247a428f8c167497ff75c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.029999996
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f5ef424355a247a428f8c167497ff75c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.029999996
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f5ef424355a247a428f8c167497ff75c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.03
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f5ef424355a247a428f8c167497ff75c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2664,7 +2664,7 @@ PrefabInstance:
     - target: {fileID: 6213723649697543207, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: mCutout
       value: 
-      objectReference: {fileID: 2064822554}
+      objectReference: {fileID: 1407712251}
     - target: {fileID: 6213723649697543207, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: mWiggle
       value: 1
@@ -3135,15 +3135,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 183173153e7e1db47bbf0cdc7760718a, type: 2}
     - target: {fileID: -4216859302048453862, guid: f5ef424355a247a428f8c167497ff75c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.029999992
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f5ef424355a247a428f8c167497ff75c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.029999992
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f5ef424355a247a428f8c167497ff75c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.03
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f5ef424355a247a428f8c167497ff75c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5066,15 +5066,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 966a5681d40d2e540b3f4c6f172c644e, type: 2}
     - target: {fileID: -4216859302048453862, guid: fca670d56c1f2954dac1757582b9942d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.022696815
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fca670d56c1f2954dac1757582b9942d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.022696817
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fca670d56c1f2954dac1757582b9942d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.022696815
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fca670d56c1f2954dac1757582b9942d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5170,7 +5170,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -6133,7 +6133,7 @@ PrefabInstance:
     - target: {fileID: 6213723649697543207, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: mCutout
       value: 
-      objectReference: {fileID: 1407712251}
+      objectReference: {fileID: 1221057095}
     - target: {fileID: 6213723649697543207, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: mDropDelay
       value: 2
@@ -6144,7 +6144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6213723649697543207, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: mShatterobject
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7090606241428891503, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: m_IsActive
@@ -6309,7 +6309,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -7516,7 +7516,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
