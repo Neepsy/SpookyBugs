@@ -7,6 +7,14 @@ public class VideoManager : MonoBehaviour
 {
     public VideoPlayer video;
 
+    private void Start()
+    {
+        if(video == null)
+        {
+            video = GetComponentInChildren<VideoPlayer>();
+        }
+    }
+
     public void PlayVideo()
     {
         video.playbackSpeed = 1;
