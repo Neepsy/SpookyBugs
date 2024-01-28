@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0c4b89d0f36094bb59ef8fc247fb80, type: 3}
+  m_Name: Entrance
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: d0f7f8dc01125c747b13294c62e9a736, type: 3}
+  - {fileID: 8300000, guid: 7950bb21d85953d4083eb582691ae5b4, type: 3}
+  - {fileID: 8300000, guid: 9ca72c9f9a2413842b5f3039f4489348, type: 3}
+  - {fileID: 8300000, guid: 62f16e59af7d1ea468b9f4248a2f6336, type: 3}
+  subtitles:
+  - Beware, for you've entered a realm where shadows twist and reality bends
+  - This TV is but the first of many enigmas you will face
+  - Tread lightly, for each step draws you deeper into the abyss
+  - And remember, not all is as it seems...

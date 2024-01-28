@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0c4b89d0f36094bb59ef8fc247fb80, type: 3}
+  m_Name: BeforeBoss
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 6abd089396ca6e34eacd05ff02881c73, type: 3}
+  - {fileID: 8300000, guid: e4a0f126ecab990419c362ba5cb4056e, type: 3}
+  - {fileID: 8300000, guid: 3e96ac684513375459d82ed5c4811c2c, type: 3}
+  subtitles:
+  - Here comes the big bad monster I was telling you about. This one will really
+    get you!
+  - '[Evil laughter]'
+  - Behold, the spawn of nightmares, the destroyer of souls!

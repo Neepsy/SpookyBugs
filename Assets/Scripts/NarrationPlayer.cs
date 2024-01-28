@@ -5,6 +5,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class NarrationPlayer : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class NarrationPlayer : MonoBehaviour
 
     private AudioSource audioSource;
     private GameObject subtitleObject;
+    private Image subtitleBG;
     private TextMeshProUGUI subtitleText;
     private SettingsManager settings;
 
@@ -25,7 +27,8 @@ public class NarrationPlayer : MonoBehaviour
         // Find components
         audioSource = GameObject.FindWithTag("MainCamera").GetComponent<AudioSource>();
         subtitleObject = GameObject.FindWithTag("Subtitle");
-        subtitleText = subtitleObject.GetComponentInChildren<TextMeshProUGUI>();
+        subtitleBG = subtitleObject.GetComponent<Image>();
+        subtitleText = subtitleObject.GetComponentInChildren<TextMeshProUGUI>(true);
 
         try
         {
@@ -33,12 +36,14 @@ public class NarrationPlayer : MonoBehaviour
         }
         catch(Exception e)
         {
+            // Only for testing purposes, create dummy settings manager
             settings = new SettingsManager();
             settings.SetSubtitlesActive(true);
         }
         
-
-        subtitleObject.SetActive(false);
+        subtitleBG.enabled = false;
+        subtitleText.text = "";
+        
     }
 
     private void Update()
@@ -89,7 +94,7 @@ public class NarrationPlayer : MonoBehaviour
         }
 
         SetSubtitle("");
-        subtitleObject.SetActive(false);
+        subtitleBG.enabled = false;
 
         isPlaying = false;
         afterEvent.Invoke();
@@ -102,10 +107,10 @@ public class NarrationPlayer : MonoBehaviour
 
         if (string.IsNullOrEmpty(subtitle))
         {
-            subtitleObject.SetActive(false);
+            subtitleBG.enabled = false;
         }
 
-        subtitleObject.SetActive(true);
+        subtitleBG.enabled = true;
         subtitleText.text = subtitle;
     }
 }

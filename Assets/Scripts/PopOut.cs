@@ -38,6 +38,12 @@ public class PopOut : MonoBehaviour
         if (mWiggle)
             mAnim.SetBool("Wiggle", true);
 
+
+        if(mDropDelay > 0)
+        {
+            StartCoroutine(DropWait());
+        }
+
     }
 
 

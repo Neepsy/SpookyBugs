@@ -19,7 +19,7 @@ public class Door : MonoBehaviour
 
     private void Update()
     {
-        
+        /*
         if(Input.GetKeyDown(KeyCode.Space) && mIsPlayerClose)
         {
             if (!mDoorFall)
@@ -34,7 +34,7 @@ public class Door : MonoBehaviour
                 mDoorFall = true;
                 DoorFall();
             }
-        }
+        }*/
     }
 
     private void OnTriggerEnter(Collider other)

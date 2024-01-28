@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0c4b89d0f36094bb59ef8fc247fb80, type: 3}
+  m_Name: InElevator
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: b0d59ba9a6f3cc442a50e302b64b2e83, type: 3}
+  - {fileID: 8300000, guid: 5ecf8f87bcfcecf4d990c3d96ab02395, type: 3}
+  - {fileID: 8300000, guid: b3c81d7d548b3fa4ba0e19749abe269e, type: 3}
+  - {fileID: 8300000, guid: c74e6c09669dcbd439a3e42443a49b0e, type: 3}
+  - {fileID: 8300000, guid: dce5b5706c9cc524eb6725021c91d760, type: 3}
+  - {fileID: 8300000, guid: 5ac0ffbf8db31164aba1889d9c12d4c6, type: 3}
+  subtitles:
+  - Ah, a brief respite in your journey, with another chance to bask in the glow
+    of television's embrace.
+  - And look, an elevator!
+  - This is your gateway to the climax of your adventure.
+  - "I can sense your excitement\u2014and perhaps a hint of apprehension?"
+  - Fear not, for whatever lies beyond these elevator doors, know that you've come
+    a long way, and I am quite proud of you!
+  - '[Ding]'

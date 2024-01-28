@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0c4b89d0f36094bb59ef8fc247fb80, type: 3}
+  m_Name: BeforeElevator
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 6d79dbc2c0a325441849b3df30645e12, type: 3}
+  - {fileID: 8300000, guid: 4661378ab6140a94dad53110416967da, type: 3}
+  - {fileID: 8300000, guid: 5ac0ffbf8db31164aba1889d9c12d4c6, type: 3}
+  subtitles:
+  - This hallway, is where the veil between worlds is thinnest.
+  - Heed the TV's warning, for it shows the fate that awaits the unwary.
+  - '[Ding]'

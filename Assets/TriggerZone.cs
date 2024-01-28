@@ -13,7 +13,6 @@ public class TriggerZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entry");
         if (singleUse && alreadyTriggered) return;
 
         alreadyTriggered = true;
