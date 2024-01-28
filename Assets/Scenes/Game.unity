@@ -8247,7 +8247,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1925740712}
         m_TargetAssemblyTypeName: Door, Assembly-CSharp
-        m_MethodName: DoorFall
+        m_MethodName: OpenDoor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
