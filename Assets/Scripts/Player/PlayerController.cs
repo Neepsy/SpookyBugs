@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
 
 
         input.actions["Jump"].performed += context => OnJump(context);
+        input.actions["Settings"].performed += context => OnSettings(context);
     }
 
     // Update is called once per frame
@@ -52,5 +53,11 @@ public class PlayerController : MonoBehaviour
     {
         //TODO: Are we even implementing jump?
         Debug.Log("Jump pressed");
+    }
+
+    private void OnSettings(InputAction.CallbackContext context)
+    {
+        //TODO: Open settings panel
+        Debug.Log("Settings toggled");
     }
 }

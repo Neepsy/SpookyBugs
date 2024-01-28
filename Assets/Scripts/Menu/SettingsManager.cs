@@ -14,14 +14,28 @@ public class SettingsManager : MonoBehaviour
 
     public AudioMixer mixer;
 
+    static SettingsManager INSTANCE;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(this);
+        
         musicVolume = 1.0f;
         narrationVolume = 1.0f;
+        sfxVolume = 1.0f;
         subtitlesActive = true;
+
+        if(INSTANCE == null)
+        {
+            INSTANCE = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(this);
     }
 
     public void SetMusicVolume(float vol)

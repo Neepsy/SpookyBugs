@@ -14,6 +14,7 @@ public class NarrationPlayer : MonoBehaviour
     private AudioSource audioSource;
     private GameObject subtitleObject;
     private TextMeshProUGUI subtitleText;
+    private SettingsManager settings;
 
     private void Start()
     {
@@ -21,6 +22,7 @@ public class NarrationPlayer : MonoBehaviour
         audioSource = GameObject.FindWithTag("MainCamera").GetComponent<AudioSource>();
         subtitleObject = GameObject.FindWithTag("Subtitle");
         subtitleText = subtitleObject.GetComponentInChildren<TextMeshProUGUI>();
+        settings = GameObject.FindWithTag("Settings").GetComponent<SettingsManager>();
 
         subtitleObject.SetActive(false);
     }
@@ -63,20 +65,31 @@ public class NarrationPlayer : MonoBehaviour
     IEnumerator PlayNarrations(Dictionary<AudioClip, string> n)
     {
         isPlaying = true;
-        subtitleObject.SetActive(true);
-
+        
         foreach (KeyValuePair<AudioClip, string> pair in n)
         {
             float length = (float)(pair.Key.length + 0.5);
             audioSource.PlayOneShot(pair.Key);
-            subtitleText.text = pair.Value;
+            SetSubtitle(pair.Value);
             yield return new WaitForSecondsRealtime(length);
         }
 
-        subtitleText.text = "";
-        subtitleObject.SetActive(false);
+        SetSubtitle("");
 
         isPlaying = false;
         yield return null;
+    }
+
+    private void SetSubtitle(string subtitle)
+    {
+        if (!settings.subtitlesActive) return;
+
+        if (string.IsNullOrEmpty(subtitle))
+        {
+            subtitleObject.SetActive(false);
+        }
+
+        subtitleObject.SetActive(true);
+        subtitleText.text = subtitle;
     }
 }

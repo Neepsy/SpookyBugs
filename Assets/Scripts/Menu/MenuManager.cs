@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,19 +7,14 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
-    public GameObject CreditsPanel;
-    public GameObject SettingsPanel;
-
-
-    private bool isCreditsOpen = false;
-    private bool isSettingsOpen = false;
-
+    public GameObject creditsPanel;
+    public GameObject settingsPanel;
 
     // Start is called before the first frame update
     void Start()
     {
-        SettingsPanel.SetActive(isCreditsOpen);
-        CreditsPanel.SetActive(isSettingsOpen);
+        creditsPanel.SetActive(false);
+        settingsPanel.SetActive(false);
     }
 
     IEnumerator LoadGameSceneAsync()
@@ -48,13 +44,11 @@ public class MenuManager : MonoBehaviour
 
     public void ToggleSettings()
     {
-        isSettingsOpen = !isSettingsOpen;
-        SettingsPanel.SetActive(isSettingsOpen);
+        settingsPanel.SetActive(!settingsPanel.activeInHierarchy);
     }
 
     public void ToggleCredits()
     {
-        isCreditsOpen = !isCreditsOpen;
-        CreditsPanel.SetActive(isCreditsOpen);
+        creditsPanel.SetActive(!creditsPanel.activeInHierarchy);
     }
 }
