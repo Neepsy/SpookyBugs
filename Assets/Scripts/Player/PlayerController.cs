@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 0.02f;
     public float acceleration = 2f;
     public float jumpPower = 2.0f;
+    public float mMouseLookSensitivity = 0.05f;
 
     private CharacterController controller;
     private Vector3 movement;
@@ -43,10 +44,12 @@ public class PlayerController : MonoBehaviour
         controller.Move(movement * moveSpeed);
     }
 
-    private void OnMouseLook(Vector2 input)
+    private void OnMouseLook(Vector2 pInput)
     {
-       Quaternion PlayerXRotation = cameraController.UpdateCameraRotation(input);
-        transform.localRotation = PlayerXRotation;
+        Vector2 fScaledInput = pInput * mMouseLookSensitivity;
+
+        Quaternion PlayerXRotation = cameraController.UpdateCameraRotation(fScaledInput);
+        transform.localRotation = PlayerXRotation.normalized;
     }
 
     private void OnJump(InputAction.CallbackContext context)
