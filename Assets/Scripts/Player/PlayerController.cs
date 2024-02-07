@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.XR;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float acceleration = 2f;
     public float jumpPower = 2.0f;
     public float mMouseLookSensitivity = 0.05f;
+    public float mVerticalSpeed = 0f;
 
     private CharacterController controller;
     private Vector3 movement;
@@ -25,6 +27,8 @@ public class PlayerController : MonoBehaviour
 
         input.actions["Jump"].performed += context => OnJump(context);
         input.actions["Settings"].performed += context => OnSettings(context);
+
+
     }
 
     // Update is called once per frame
@@ -32,6 +36,22 @@ public class PlayerController : MonoBehaviour
     {
         OnMove(input.actions["Move"].ReadValue<Vector2>());
         OnMouseLook(input.actions["Look"].ReadValue<Vector2>());
+    }
+
+    //Adding gravity
+    void FixedUpdate()
+    {
+        if (controller.isGrounded && mVerticalSpeed < 0f)
+        {
+            mVerticalSpeed = 0f;
+        }
+        else
+        {
+            mVerticalSpeed += Physics.gravity.y * Time.deltaTime;
+        }
+
+        Vector3 fMove = new Vector3(0, mVerticalSpeed, 0);
+        controller.Move(fMove * Time.deltaTime);
     }
 
     private void OnMove(Vector2 input)
