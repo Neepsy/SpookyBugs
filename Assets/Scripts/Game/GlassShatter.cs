@@ -10,7 +10,7 @@ public class GlassShatter : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         StartCoroutine(SplitMesh(true));
-        AudioSource.PlayClipAtPoint(glass, this.transform.position, 0.01f);
+        //AudioSource.PlayClipAtPoint(glass, this.transform.position, 0.01f);
         once = true;
     }
 
