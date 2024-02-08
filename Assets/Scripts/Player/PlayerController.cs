@@ -7,7 +7,7 @@ using UnityEngine.InputSystem.XR;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 0.02f;
-    public float acceleration = 2f;
+    // public float acceleration = 2f;
     public float jumpPower = 2.0f;
     public float mMouseLookSensitivity = 0.05f;
     public float mVerticalSpeed = 0f;
@@ -60,8 +60,12 @@ public class PlayerController : MonoBehaviour
         targetMovement = transform.TransformDirection(targetMovement);
 
         // (De)accelerate actual movement towards input value
-        movement = Vector3.MoveTowards(movement, targetMovement, acceleration * Time.deltaTime);
-        controller.Move(movement * moveSpeed);
+		// moves like your on ice
+        //movement = Vector3.MoveTowards(movement, targetMovement, acceleration * Time.deltaTime);
+		//controller.Move(movement * moveSpeed);
+		// moves like your not on ice
+		movement = targetMovement.normalized * moveSpeed * Time.deltaTime;
+		controller.Move(movement);
     }
 
     private void OnMouseLook(Vector2 pInput)
