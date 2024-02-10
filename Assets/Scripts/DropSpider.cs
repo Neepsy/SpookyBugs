@@ -9,6 +9,7 @@ public class DropSpider : MonoBehaviour
     public Transform mSpawnPoint;
     public GameObject cuteBoss;
     public AudioSource squeak;
+    public Transform mCuteSpiderSpawn;
     bool mSpawned = false;
 
     GameObject boss;
@@ -25,7 +26,7 @@ public class DropSpider : MonoBehaviour
 
     public void Replace()
     {
-        Vector3 pos = boss.transform.position;
+        Vector3 pos = mCuteSpiderSpawn.position;
 
         Instantiate(cuteBoss, pos, Quaternion.identity);
         Destroy(boss);
