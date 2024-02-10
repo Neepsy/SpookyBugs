@@ -17334,6 +17334,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4160544201351488, guid: 13041947284ac9f4bb59546241a85980, type: 3}
   m_PrefabInstance: {fileID: 535806419}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &536578293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 707775444553666120, guid: dd7ceed53fc2f7345b01cbbf2f7b786a, type: 3}
+  m_PrefabInstance: {fileID: 1262752364}
+  m_PrefabAsset: {fileID: 0}
+--- !u!143 &536578300
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536578293}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1
+  m_Radius: 0.49999994
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &536838394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41848,6 +41879,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9135550624084882792, guid: dd7ceed53fc2f7345b01cbbf2f7b786a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135550624084882792, guid: dd7ceed53fc2f7345b01cbbf2f7b786a, type: 3}
       propertyPath: m_SlopeLimit
       value: 45
       objectReference: {fileID: 0}
@@ -41859,6 +41894,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 707775444553666120, guid: dd7ceed53fc2f7345b01cbbf2f7b786a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 536578300}
     - targetCorrespondingSourceObject: {fileID: 1826914199803571487, guid: dd7ceed53fc2f7345b01cbbf2f7b786a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1123096335}
@@ -64526,6 +64564,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2077930380}
     - target: {fileID: 6213723649697543207, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213723649697543207, guid: 2a6524c32ca4666468f86716003a2194, type: 3}
       propertyPath: mDropDelay
       value: 0
       objectReference: {fileID: 0}
@@ -69903,7 +69945,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 5.4, y: 5.4, z: 0}
   m_Center: {x: 0, y: 2.6, z: -0.0000022380245}
