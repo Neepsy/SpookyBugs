@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.XR;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
+    public event Action<Puzzle_Interaction_Trigger> OnEnter;
+    public event Action OnExit;
+   
     public float moveSpeed = 0.02f;
     // public float acceleration = 2f;
     public float jumpPower = 2.0f;
@@ -52,6 +56,25 @@ public class PlayerController : MonoBehaviour
 
         Vector3 fMove = new Vector3(0, mVerticalSpeed, 0);
         controller.Move(fMove * Time.deltaTime);
+    }
+
+    void OnTriggerEnter(Collider collision)
+    {
+        Debug.Log("Enter-p");
+        
+        var trigger = collision.gameObject.GetComponent<Puzzle_Interaction_Trigger>();
+        if(trigger == null)
+        {
+            return;
+        }
+        OnEnter?.Invoke(trigger);
+    }
+
+    void OnTriggerExit(Collider collision)
+    {
+        Debug.Log("LOL-p");
+       
+        OnExit?.Invoke();
     }
 
     private void OnMove(Vector2 input)
