@@ -22,12 +22,14 @@ public class VideoManager : MonoBehaviour
 
     public void PlayVideo()
     {
-        video.playbackSpeed = 1;
+        //video.playbackSpeed = 1;
+        video.Play();
     }
 
     public void PauseVideo()
     {
-        video.playbackSpeed = 0;
+        //video.playbackSpeed = 0;
+        video.Pause();
     }
 
     public void RestartVideo()
