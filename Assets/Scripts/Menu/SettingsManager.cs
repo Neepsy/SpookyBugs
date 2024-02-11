@@ -35,7 +35,7 @@ public class SettingsManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        //DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(this);
     }
 
     public void SetMusicVolume(float vol)

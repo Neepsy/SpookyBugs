@@ -37,7 +37,7 @@ public class NarrationPlayer : MonoBehaviour
         catch(Exception e)
         {
             // Only for testing purposes, create dummy settings manager
-            settings = gameObject.AddComponent<SettingsManager>();
+            settings = new SettingsManager();
             settings.SetSubtitlesActive(true);
         }
         
